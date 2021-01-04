@@ -3302,10 +3302,9 @@ input, select, textarea {
 		background-color: rgba(0, 0, 0, 0.5);
 	   
 	}
-	
 	#intro {
-		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem ;
+		color: #f9f9f9;
+		padding: 18rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3345,7 +3344,7 @@ input, select, textarea {
 		}
 
 		#intro a {
-			color: #ffffff;
+			color: #f9f9f9;
 			border-bottom-color: rgba(128, 104, 104, 0.5);
 		}
 
@@ -3359,7 +3358,7 @@ input, select, textarea {
 		}
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
-			color: #ffffff;
+			color: #f9f9f9;
 			margin-top: 200px;
 		}
 
@@ -3419,10 +3418,12 @@ input, select, textarea {
 		}
 
 		#intro p {
-			font-size: 1.25rem;
+			font-size: 1.1rem;
 			font-style: italic;
-			margin-top: -0.25rem;
+			margin-top: 0.25rem;
 			text-align: center;
+			padding: 0px 150px;
+			opacity: 0.8;
 		}
 
 		#intro + #header {
@@ -3485,11 +3486,15 @@ input, select, textarea {
 
 			#intro {
 				padding: 4rem 4rem 2rem 4rem ;
-				min-height: 90vh;
+	
 			}
 
 				#intro p br {
 					display: none;
+				}
+				#intro p {
+					
+					padding: 0px 30px;
 				}
 
 				#intro + #header {
@@ -3497,23 +3502,25 @@ input, select, textarea {
 				}
 
 		}
+	
 
 		@media screen and (max-width: 736px) {
 
 			#intro {
 				padding: 3rem 2rem 1rem 2rem ;
-				min-height: 80vh;
+				
 			}
 
 				#intro h1 {
-					font-size: 3.25rem;
+					font-size: 3.0rem;
 					line-height: 1.1;
 					margin-bottom: 1rem;
 				}
 
 				#intro p {
-					font-size: 1rem;
-					margin-top: 0rem;
+					font-size: .8rem;
+					margin-top: 1rem;
+					padding: 0px 50px;
 				}
 
 				#intro .actions {
@@ -3614,6 +3621,18 @@ input, select, textarea {
 			}
 
 		@media screen and (max-width: 980px) {
+	
+
+			#header {
+				height: 14rem;
+				padding-bottom: 4rem;
+			}
+
+		}
+		@media screen and (max-width: 850px) {
+			#intro {
+				min-height: 80vh;
+			}
 
 			#header {
 				height: 14rem;
@@ -3623,7 +3642,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+			#intro {
+				min-height: 60vh;
+			}
 			#header {
 				padding-bottom: 3rem;
 			}
