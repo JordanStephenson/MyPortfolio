@@ -3284,7 +3284,25 @@ input, select, textarea {
 		}
 
 /* Intro */
-
+	.video-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.video-container::after {
+		content: "";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+	   
+	}
+	
 	#intro {
 		color: #ffffff;
 		padding: 8rem 4rem 6rem 4rem ;
@@ -3312,11 +3330,11 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 100vh;
-		background-image: linear-gradient(to bottom, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../../images/pexels-jakub-novacek-924824.jpg);
+		min-height: 80vh;
+		background: var(--primary-color) url('../../images/video.mov') no-repeat center center/cover;
 		background-size: cover;
 		background-position: center;
-		background-attachment: fixed;
+	
 	}
 		#intro a{
 			margin-top: 100px;
