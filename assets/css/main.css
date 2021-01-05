@@ -3335,6 +3335,8 @@ input, select, textarea {
 		background-position: center;
 	
 	}
+		
+	
 		#intro a{
 			margin-top: 100px;
 		}
@@ -3500,6 +3502,8 @@ input, select, textarea {
 				#intro + #header {
 					margin-top: -14rem;
 				}
+				
+				
 
 		}
 	
